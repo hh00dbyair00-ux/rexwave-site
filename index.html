@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="ru"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>#rexwave — биты от битмейкеров</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fullscreen">
+        <div class="content">
+            <div class="header">
+                <span class="rexwave-title">#rexwave</span>
+            </div>            <!-- Карточки продюсеров с битами -->            <div class="producers" id="producersContainer"></div>            <!-- Форма добавления нового бита -->            <div class="add-beat-section">
+                <h3 class="section-title">➕ Добавить новый бит</h3>
+                <div class="add-beat-form">
+                    <select id="beatProducer" class="form-select" required>
+                        <option value="">Выбери продюсера</option>
+                    </select>
+                    <input type="text" id="beatTitle" placeholder="Название бита" class="form-input" required>
+                    <input type="number" id="beatPrice" placeholder="Цена в $" class="form-input" step="1" required>
+                    <input type="file" id="beatAudio" accept="audio/*" class="form-file">
+                    <button id="addBeatBtn" class="v-btn">💾 Сохранить бит</button>
+                </div>
+                <div class="form-note">* Можно загрузить свой аудиофайл (mp3/wav). Без файла — демо-звук (синтез).</div>
+            </div>            <!-- Визуализатор -->            <div class="visual">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                <div class="bar"></div>
+            </div>            <div class="footer">
+                <span class="copyright">#rexwave 2025-2026 — биты с актуальными ценами</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
